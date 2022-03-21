@@ -3,6 +3,11 @@ h1 {
     font-family: Helvetica, sans-serif;
 }
 
+p {
+    color: darkblue;
+    font-family: Helvetica, sans-serif;
+}
+
 table {
     border: 1px solid black;
     border-collapse: collapse;
@@ -16,6 +21,7 @@ td.value {
 th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    color: darkgreen;
     font-family: Helvetica, sans-serif;
     padding-left: 15px;
     padding-right: 15px;

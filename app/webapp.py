@@ -13,8 +13,8 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
 
-@app.get("/")
-def read_root(request: Request):
+@app.get("/", response_class=HTMLResponse)
+async def read_root(request: Request):
     results = {
         'request': request,
         'app_version': '0.0.1',
